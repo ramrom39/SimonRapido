@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Dice</title>
+    <link rel="stylesheet" href="estiloFA.css">
+    <script src="ranking.js"></script>
+    <script defer src="scriptFA.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="round">Ronda 1</h1>
+    <div id="panel">
+
+        <div class="ranking">
+            <p>Ranking:</p>
+        </div>
+
+        <div id="panelPR">
+            <img src="imagenes/diablo.png" id="uno">
+            <div id="panelSEC">
+                <div class="red"></div>
+                <div class="green"></div>
+                <div class="yellow"></div>
+                <div class="blue"></div>
+            </div>
+            <img src="imagenes/fantasma.png" id="dos">
+        </div>
+
+        <div class="score">
+            <p>Puntuacion:</p>
+            <p class="puntos">0</p>
+        </div>
+
+    </div>
+    <div id="botonera">
+        <button onclick="location.href='index.html'" id="inicio">Inicio</button>
+        <button id="howtoplay">¿Cómo jugar?</button>
+        <button id="inicioN">Comenzar</button>
+    </div>
+    <audio src="sonidos/rojo.mp3" id="sound_rojo"></audio>
+    <audio src="sonidos/verde.mp3" id="sound_verde"></audio>
+    <audio src="sonidos/amarillo.mp3" id="sound_amarillo"></audio>
+    <audio src="sonidos/azul.mp3" id="sound_azul"></audio>
+    <audio src="sonidos/lose.mp3" id="sound2"></audio>
+    <audio src="sonidos/quack.mp3" id="sound_quack"></audio>
+    <audio src="sonidos/hurt.mp3" id="sound_hurt"></audio>
+</body>
+</html>
